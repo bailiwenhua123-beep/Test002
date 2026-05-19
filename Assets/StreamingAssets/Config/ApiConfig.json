@@ -1,0 +1,61 @@
+{
+	"api": {
+		"AllAssetTree": "http://192.168.10.118:8010/api/AllAssetTree",
+		"GetTreeById": "http://192.168.10.118:8010/api/GetTreeById",
+		"AssetTreeUpdate": "http://192.168.10.118:8010/api/AssetTreeUpdate",
+		"AssetTreeManager": "http://192.168.10.118:8010/rezero/assettree/index.html",
+		"GetToken": "http://192.168.10.118:8880/prod-api/login",
+		"GetExecuteTask": "http://192.168.10.118:8880/prod-api/system/taskexecute/list", //巡检工单执行
+		"GetTaskHandleHistory": "http://192.168.10.118:8880/prod-api/system/taskhandlehistory/list", //巡检历史
+		"GetPartSapplyDetail": "http://192.168.10.118:8880/prod-api/system/partsapplydetail/list", //备品备件申领信息
+		"GetFaultData": "http://192.168.10.118:8880/prod-api/system/history/list?pageNum=1&pageSize=10", //获取故障数据
+		"GetInspectionData": "http://192.168.10.118:8880/prod-api/system/repairtask/list", //获取巡检维修工单
+		"GetGYRecord": "http://192.168.10.118:8880/prod-api/system/line/list", //工艺档案
+		"GetDeviceRecord": "http://192.168.10.118:8880/prod-api/system/archival/list", //设备档案
+		"GetWebUserName": "http://192.168.10.118:8880/prod-api/system/user/list", //网页用户名称
+		"GetWebPage_SCXX": "http://192.168.10.118:8880/system/user", //获取生产信息网页
+		"GetWebPage_YWJC": "http://192.168.10.118:8880/system/user", //获取运维检测网页
+		"GetWebPage_YWZJ": "https://www.bilibili.com/", //获取运维专家网页
+		"GetWebPage_WDZS": "https://www.youku.com", //获取问答助手网页
+		"GetWebPage_FaultInfo": "http://192.168.10.118:8880/system/user", //获取故障网页
+		"GetWebPage_RepairRequest": "http://192.168.10.118:8880/system/user", //获取维修申请网页
+		"GetWebPage_KnowledgeBase": "http://192.168.10.118:8880/system/user", //获取知识库网页
+		"GetWebPage_InspectionWOMsg": "http://192.168.10.118:8880/system/user", //获取巡检工单管理网页
+		"GetWebPage_InspectionWOHandle": "http://192.168.10.118:8880/system/user", //获取巡检工单处理网页
+		"GetWebPage_MaintenanceHistory": "http://192.168.10.118:8880/system/user", //获取维修历史网页
+		"MonitorCtrl_Up": "http://192.168.10.118:8880/prod-api/system/repairtask/list", //控制监控云台上转    
+		"MonitorCtrl_Down": "http://192.168.10.118:8880/prod-api/system/repairtask/list", //控制监控云台下转
+		"MonitorCtrl_Auto": "http://192.168.10.118:8880/prod-api/system/repairtask/list", //控制监控云台自由转动
+		"MonitorCtrl_Left": "http://192.168.10.118:8880/prod-api/system/repairtask/list", //控制监控云台左转
+		"MonitorCtrl_Right": "http://192.168.10.118:8880/prod-api/system/repairtask/list", //控制监控云台右转
+		"GetWarningInfo": "http://192.168.10.118:15101/line/getErrorInfo",
+		"GetErrorInfoByTime": "http://192.168.10.118:15101/Line/getErrorInfoByTime"
+	},
+	"DataPlayapi": {
+		"ClientId": "aab5fdf7-06d3-4961-9d93-a8be3d0150fb",
+		"DataPlayUrl": "http://192.168.10.118:15128/",
+		"query": "api/DataPlayapi/query?clientId={0}&beginTime={1}&endTime={2}",
+		"query_eventtime": "api/DataPlayapi/query_eventtime?clientId={0}&eventTime={1}",
+		"Play": "api/DataPlayapi/Play?clientId={0}",
+		"Pause": "api/DataPlayapi/Pause?clientId={0}",
+		"SetSpeed": "api/DataPlayapi/SetSpeed?clientId={0}&speed={1}",
+		"SetProgress": "api/DataPlayapi/SetProgress?clientId={0}&progress={1}",
+		"Stop": "api/DataPlayapi/Stop?clientId={0}"
+	},
+	"Redis": [
+		{
+			"ConnectionName": "RealTimeDB",
+			"ConnectionStr": "192.168.10.118:20379",
+			"DBIndex": "2"
+		},
+		{
+			"ConnectionName": "HistoryDB",
+			"ConnectionStr": "192.168.10.118:20379",
+			"DBIndex": "8"
+		}
+	],
+	"LoginData": {
+		"username": "admin",
+		"password": "admin123"
+	}
+}
